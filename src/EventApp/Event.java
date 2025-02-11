@@ -1,5 +1,7 @@
 package EventApp;
 
+import java.util.List;
+
 public class Event {
 
     private int id;
@@ -41,5 +43,12 @@ public class Event {
                 ", text='" + text + '\'' +
                 ", date='" + date + '\'' +
                 '}';
+    }
+
+    public void addEvent(Event event) {
+    }
+
+    public List<Event> getAllEvents() {
+        return null;
     }
 }
