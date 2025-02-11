@@ -5,11 +5,9 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.SQLException;
 import java.util.List;
-import java.util.Locale;
 
-public class Main {
+public class GUI {
 
     private Event event;
     private JTable eventTable;
@@ -72,7 +70,13 @@ public class Main {
                 }
             });
 
-        }
+            addButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    String title = titleField.getText();
 
+                }
+            });
+        }
     }
 
